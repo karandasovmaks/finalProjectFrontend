@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FinalaApplication</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="teach_name">Имя учителя</string>
+    <string name="Prodile">Профиль</string>
+    <string name="try_the_test">Пройти тест</string>
+    <string name="test_name">Название теста</string>
+    <string name="test_description">описание теста</string>
+    <string name="popular_tests">Популярные тесты</string>
+    <string name="yuorClass">ваш класс</string>
+    <string name="ClassName">Название Класса</string>
+    <string name="homework">Домашняя работа</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="save_Anser">Подтвердить Ответ</string>
+</resources>

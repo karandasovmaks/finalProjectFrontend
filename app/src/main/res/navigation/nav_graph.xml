@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/popularTests2">
+
+
+    <fragment
+        android:id="@+id/popularTests2"
+        android:name="com.example.finalaapplication.ui.fragments.PopularTests"
+        android:label="fragment_popular_tests"
+        tools:layout="@layout/fragment_popular_tests" >
+        <action
+            android:id="@+id/action_popularTests2_to_second_Screen"
+            app:destination="@id/second_Screen" />
+        <action
+            android:id="@+id/action_popularTests2_to_tests_ui"
+            app:destination="@id/tests_ui" />
+        <action
+            android:id="@+id/action_popularTests2_to_fragmentperson"
+            app:destination="@id/fragmentperson" />
+        <action
+            android:id="@+id/action_popularTests2_to_testCreate"
+            app:destination="@id/testCreate" />
+    </fragment>
+    <fragment
+        android:id="@+id/second_Screen"
+        android:name="com.example.finalaapplication.ui.fragments.Second_Screen"
+        android:label="fragment_second__screen"
+        tools:layout="@layout/fragment_second__screen" >
+        <action
+            android:id="@+id/action_second_Screen_to_popularTests2"
+            app:destination="@id/popularTests2" />
+        <action
+            android:id="@+id/action_second_Screen_to_tests_ui"
+            app:destination="@id/tests_ui" />
+        <action
+            android:id="@+id/action_second_Screen_to_fragmentperson"
+            app:destination="@id/fragmentperson" />
+    </fragment>
+    <fragment
+        android:id="@+id/tests_ui"
+        android:name="com.example.finalaapplication.ui.fragments.Tests_ui"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" >
+        <action
+            android:id="@+id/action_tests_ui_to_test_Result"
+            app:destination="@id/test_Result" />
+    </fragment>
+    <fragment
+        android:id="@+id/test_Result"
+        android:name="com.example.finalaapplication.ui.fragments.Test_Result"
+        android:label="fragment_test__result"
+        tools:layout="@layout/fragment_test__result" >
+        <action
+            android:id="@+id/action_test_Result_to_popularTests2"
+            app:destination="@id/popularTests2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentperson"
+        android:name="com.example.finalaapplication.ui.fragments.fragmentperson"
+        android:label="fragment_fragmentperson"
+        tools:layout="@layout/fragment_fragmentperson" >
+        <action
+            android:id="@+id/action_fragmentperson_to_popularTests2"
+            app:destination="@id/popularTests2" />
+        <action
+            android:id="@+id/action_fragmentperson_to_second_Screen"
+            app:destination="@id/second_Screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/testCreate"
+        android:name="com.example.finalaapplication.ui.fragments.TestCreate"
+        android:label="fragment_test_create"
+        tools:layout="@layout/fragment_test_create" >
+        <action
+            android:id="@+id/action_testCreate_to_popularTests2"
+            app:destination="@id/popularTests2" />
+    </fragment>
+</navigation>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.Enterfragment"
+    android:background="@drawable/fragment_enter_background"
+    android:id="@+id/toggleGroup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="107dp"
+            android:layout_height="107dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Добро пожаловать!"
+            android:textColor="@color/black"
+            android:textSize="48px" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/roleToggleGroup"
+            android:layout_width="220dp"
+            android:layout_height="31dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/slider_outline"
+            android:gravity="center"
+            app:checkedButton="@id/btnStudent"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStudent"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="110dp"
+                android:layout_height="31dp"
+                android:text="Ученик"
+                android:textColor="@color/black"
+                android:textSize="28px"
+                app:cornerRadius="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTeacher"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="110dp"
+                android:layout_height="31dp"
+                android:text="Учитель"
+                android:textColor="@color/black"
+                android:textSize="28px"
+                />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/loginInput"
+            android:layout_width="220dp"
+            android:layout_height="31dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/slider_outline"
+            android:hint="Логин"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/greyhint"/>
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/passwordInput"
+            android:layout_width="220dp"
+            android:layout_height="31dp"
+            android:background="@drawable/slider_outline"
+            android:hint="Пароль"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/greyhint"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registrationButton"
+            android:layout_margin="20dp"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_background"
+            android:text="Зарегистрироваться"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/haveAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="у меня уже есть аккаунт"
+            android:textColor="@color/linkcolor"/>
+
+
+    </LinearLayout>
+</FrameLayout>

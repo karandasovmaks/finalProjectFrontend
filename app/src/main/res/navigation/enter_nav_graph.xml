@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/enter_nav_graph"
+    app:startDestination="@id/enterfragment">
+
+    <fragment
+        android:id="@+id/enterfragment"
+        android:name="com.example.finalaapplication.ui.fragments.Enterfragment"
+        android:label="fragment_enterfragment"
+        tools:layout="@layout/fragment_enterfragment" >
+        <action
+            android:id="@+id/action_enterfragment_to_fragment_log_in"
+            app:destination="@id/fragment_log_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_log_in"
+        android:name="com.example.finalaapplication.ui.fragments.Fragment_log_in"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_fragment_log_in_to_enterfragment"
+            app:destination="@id/enterfragment" />
+    </fragment>
+</navigation>
